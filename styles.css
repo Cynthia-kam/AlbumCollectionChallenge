@@ -1,194 +1,48 @@
-
-*{
-    margin:4;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index:1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  margin-top: 10px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
 }
 
-/* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  display:flexbox;
-  
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-.container{
-    display: flex;
-    padding: 10px;
-    background-color: rgb(236, 246, 236);
-    flex-direction: column;
-   justify-content: center;
-   align-items:center;
-  
-   
-}
-.myList{
-    display: flex;
-    padding: 10px;
-    background-color: rgb(236, 246, 236);
-    flex-direction: column;
-   justify-content:space-evenly;
-   align-items:flex-start; 
-   align-self: center;
-
-}
-.item{
-    background-color: rgb(234, 234, 234);
-    font-size: 35%;
+    background-color: #eff0ee;
+    margin: auto;
     padding: 20px;
-    margin: 10px;
-    flex: 1;
-    height: fit-content;
-    width:90%;
+    border: 1px solid #888;
+    width: 80%;
+    display: flexbox;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+#edit,#delete,#update,#myBtn,#submit{
+    background-color: rgb(168, 196, 207);
+    margin-right: 20px;
+    height: 35px;
+    border-radius: 15%;
     
 }
-
-.items-3{
-    
- 
-}
-.items-5{
-
-padding: 20px;
-  
-}
-button{
-    padding: 10px;
-   
-  
-}
-#submit{
-    text-align: center;
-    border-radius: 10px;
-    border-style: solid;
-    max-width: 95%;
-    background-color: cornflowerblue;
-    padding-right: 20px;
-
-}
-textarea{
- 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 95%;
-   padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-    border-style: solid;
-    position: relative;
-
-}
-input{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 95%;
-    padding-right: 70px;
-    padding-bottom: 10px;
-    margin-left: 10px;
-   text-align: center;
-
-}
-.title{
-
-}
-.link{
-
-}
-.elements{
-    display:flex;
-    flex-direction: row;
-    /* justify-content:baseline;
-    align-items: flex-start; */
-   
-    flex:1;
-    background-color: transparent;
-    font-size: 10px;
-    margin: 10px; 
-   height: 40px;
-  padding-bottom: 10px;
-   align-items: center;
-   border-radius: 10px;
-   border-bottom: #000 ;
-   border-style: dotted;
-
-}
-.element{
-    font-size: 10px;
-    padding: 2px;
-    margin: 20px; 
-}
-a{
-    max-width: 95%;
-   justify-self: start;
-}
-img{
-    width: 100px;
-    height: 100%;
-}
-
-.element-1{
-    text-align: justify;
-    font-weight: bold;
-    font-size: medium;
-    font-style: italic;
-    font-family: sans-serif;
-    justify-self: center;
-
-}
-.element-2{
-    text-align: justify;
-    font-weight: bold;
-    font-size: large;
-    font-style: italic;
-    font-family: sans-serif;
-    justify-self: center;
-    max-width: 100%;
-
-}
-.element-3{
-    max-width: 100%;
-    height: 100%;
-
-}
-.element-4{
-    max-width: 100%;
-    height: 100%;
-
+#name,#description,#thumbnail,#pictures{
+    height: 35px;
 }
